@@ -9,38 +9,85 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: hsla(185, 41%, 84%, 1);
     font-family: 'Space Mono', monospace;
 }
 
-input{
+header {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 23.7px;
+    font-weight: 700;
+    color: hsla(186, 14%, 43%, 1);
+}
+
+input {
     background-color: hsla(185, 38%, 97%, 1);
     border: 0;
     border-radius: 5px;
 }
 
+input:focus {
+    outline: none;
+
+}
+
 .white-box {
-    padding: 32px 32px 32px 32px;
+    padding: 32px 24px 32px 24px;
     background-color: hsla(0, 0%, 100%, 1);
     border-radius: 25px;
     margin-top: 40px;
-    max-height: 789px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
-.top input{
+.bottom{
+    margin-top: 32px;
+}
+
+.top input {
     width: 100%;
     padding: 16px 16px 16px 16px;
     margin-top: 6px;
 }
 
+.bill-put {
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 35.54px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    height: 48px;
+}
+
+.tips{
+    display: flex;
+    flex-wrap: wrap;
+    width: 311px;
+    column-gap: 16px;
+}
+
+.number-of {
+    background-image: url(/images/icon-person.svg);
+    background-repeat: no-repeat;
+    text-align: right;
+    background-position: 20px;
+    font-size: 24px;
+    line-height: 35.54px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    height: 48px;
+}
+
 .middle {
     margin-top: 32px;
     width: 309px;
-}
-
-.middle h2 {
-    margin-bottom: 6px;
 }
 
 .tip-box {
@@ -52,6 +99,19 @@ input{
     margin-top: 16px;
     color: white;
 
+}
+
+.box-3 {
+    background-color: hsla(172, 67%, 45%, 1);
+    color: hsla(183, 100%, 15%, 1);
+}
+
+.box-6 {
+    background-color: hsla(185, 38%, 97%, 1);
+    color: hsla(180, 18%, 40%, 1);
+    font-size: 24px;
+    text-align: right;
+    font-weight: 700;
 }
 
 .first {
@@ -71,17 +131,17 @@ input{
 
 }
 
-.bottom{
-    margin-top:32px;
+.total {
+    margin-top: 32px;
 }
 
-.bottom input{
+.bottom input {
     margin-top: 6px;
     padding: 16px 16px 16px 16px;
     width: 100%;
 }
 
-.green-box{
+.green-box {
     margin-top: 32px;
     padding: 39px 22px 24px 24px;
     background-color: hsla(183, 100%, 15%, 1);
@@ -89,18 +149,33 @@ input{
     color: white;
 }
 
-.green-box .top{
+.green-box h1 {
+    font-size: 36px;
+    color: hsla(172, 67%, 45%, 1);
+}
+
+.green-box h2 {
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.green-box span {
+    color: hsla(183, 15%, 56%, 1);
+    font-size: 13px;
+    line-height: 19.25px;
+}
+
+.green-box .top {
     display: flex;
     justify-content: space-between;
 
 }
 
-.green-box .bottom{
+.green-box .total {
     display: flex;
     justify-content: space-between;
 }
 
-.green-box button{
+.green-box button {
     width: 100%;
     padding: 9px 32px 9px 32px;
     margin-top: 32px;
@@ -109,4 +184,89 @@ input{
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    height: 48px;
+}
+
+@media(min-width:1440px) {
+
+    .tip-amount h1{
+        font-size: 48px;
+        line-height: 71.09px;
+    }
+
+    .total-amount h1{
+        font-size: 48px;
+        line-height: 71.09px;
+    }
+    .white-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 32px 32px 48px;
+        background-color: hsla(0, 0%, 100%, 1);
+        border-radius: 25px;
+        margin-top: 40px;
+        width: 920px;
+        align-items: center;
+    }
+
+    .green-box {
+        padding: 56px 40px 40px 40px;
+        background-color: hsla(183, 100%, 15%, 1);
+        border-radius: 15px;
+        color: white;
+        width: 413px;
+    }
+
+    .green-box button {
+        margin-top: 122px;
+        background-color: hsla(183, 78%, 24%, 1);
+    }
+
+    .tip-box {
+        width: 117px;
+        padding: 6px 14px 6px 14px;
+        text-align: center;
+    }
+
+    .top input{
+    width: 379px;
+    }
+
+    .tips{
+        display: flex;
+        flex-wrap: wrap;
+        width: 379px;
+        column-gap: 14px;
+        cursor: pointer;
+    }
+
+    .bottom .number-of{
+        width: 379px;
+    }
+
+    .bottom{
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+    .green-box{
+        margin-top: 0;
+    }
+
+    .green-box button{
+        padding: 9px 40px 9px 37px;
+    }
+
+    .total{
+        margin-top: 25px;
+    }
+
+    .green-box .top{
+        align-items: center;
+    }
+
+    .green-box .total{
+        align-items: center;
+    }
+
 }
