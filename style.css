@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsla(185, 41%, 84%, 1);
+    font-family: 'Space Mono', monospace;
+}
+
+input{
+    background-color: hsla(185, 38%, 97%, 1);
+    border: 0;
+    border-radius: 5px;
+}
+
+.white-box {
+    padding: 32px 32px 32px 32px;
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 25px;
+    margin-top: 40px;
+    max-height: 789px;
+}
+
+.top input{
+    width: 100%;
+    padding: 16px 16px 16px 16px;
+    margin-top: 6px;
+}
+
+.middle {
+    margin-top: 32px;
+    width: 309px;
+}
+
+.middle h2 {
+    margin-bottom: 6px;
+}
+
+.tip-box {
+    padding: 6px 20px 6px 20px;
+    font-size: 24px;
+    line-height: 35.54px;
+    background-color: hsla(183, 100%, 15%, 1);
+    width: 146.63px;
+    margin-top: 16px;
+    color: white;
+
+}
+
+.first {
+    display: flex;
+    column-gap: 17px;
+}
+
+.second {
+    display: flex;
+    column-gap: 17px;
+
+}
+
+.third {
+    display: flex;
+    column-gap: 17px;
+
+}
+
+.bottom{
+    margin-top:32px;
+}
+
+.bottom input{
+    margin-top: 6px;
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+}
+
+.green-box{
+    margin-top: 32px;
+    padding: 39px 22px 24px 24px;
+    background-color: hsla(183, 100%, 15%, 1);
+    border-radius: 15px;
+    color: white;
+}
+
+.green-box .top{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.green-box .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.green-box button{
+    width: 100%;
+    padding: 9px 32px 9px 32px;
+    margin-top: 32px;
+    background-color: hsla(172, 67%, 46%, 1);
+    color: hsla(183, 100%, 15%, 1);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
