@@ -98,7 +98,7 @@ input:focus {
     width: 146.63px;
     margin-top: 16px;
     color: white;
-
+    border-radius: 5px;
 }
 
 .box-3 {
