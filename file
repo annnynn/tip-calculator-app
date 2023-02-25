@@ -1,0 +1,19 @@
+1. თითო ადამიანზე თიფი და მთლიანი თანხა
+რამდენი უწევს
+
+
+ people = ""
+ bill = ""
+ forEachPerson = bill / people
+ tip = forEachPerson / tip
+ total = forEachPerson + tip;  
+
+
+
+დავხარჯეთ 10ლ
+რესტორნის თიფი 10%
+
+10 / რაოდენობაზე 
+
+
+

@@ -71,6 +71,7 @@ input:focus {
     flex-wrap: wrap;
     width: 311px;
     column-gap: 16px;
+    cursor: pointer;
 }
 
 .number-of {

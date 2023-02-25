@@ -18,53 +18,53 @@
     <header>
         <img src="/images/logo.svg" alt="">
     </header>
-
     <div class="white-box">
         <div class="sections">
             <section class="right-section">
                 <div class="top">
                     <h2>Bill</h2>
-                    <input class="bill-put"type="text" placeholder="0">
+                    <input id="bill" class="bill-put" type="text" placeholder="0">
                 </div>
                 <div class="middle">
                     <h2>Select Tip %</h2>
                     <div class="tips">
-                            <div class="tip-box box-1">5%</div>
-                            <div class="tip-box box-2">10%</div>
-                            <div class="tip-box box-3">15%</div>
-                            <div class="tip-box box-4">25%</div>
-                            <div class="tip-box box-5">50%</div>
-                            <input class="tip-box box-6" placeholder="Custom">
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <h2>Number of People</h2>
-                        <input class="number-of" type="text" placeholder="0">
+                        <div name="tipBox" class="percentage tip-box box-1">5%</div>
+                        <div name="tipBox" class="percentage tip-box box-2">10%</div>
+                        <div name="tipBox" class="percentage tip-box box-3">15%</div>
+                        <div name="tipBox" class="percentage tip-box box-4">25%</div>
+                        <div name="tipBox" class="percentage tip-box box-5">50%</div>
+                        <input id="custom" class="tip-box box-6" placeholder="Custom">
                     </div>
                 </div>
-            <section class="green-box">
-                <div class="top">
-                    <div class="div-one">
-                        <h2>Tip Amount</h2>
-                        <span>/ person</span>
-                    </div>
-                    <div class="tip-amount">
-                        <h1>$4.27</h1>
-                    </div>
+                <div class="bottom">
+                    <h2>Number of People</h2>
+                    <input id="numberOfPeople" class="number-of" type="text" placeholder="0">
                 </div>
-                <div class="total">
-                    <div class="div-one">
-                        <h2>Total</h2>
-                        <span>/ person</span>
-                    </div>
-                    <div class="total-amount">
-                        <h1>$32.79</h1>
-                    </div>
-                </div>
-                <button type="submit">RESET</button>
-            </section>
         </div>
+        <section class="green-box">
+            <div class="top">
+                <div class="div-one">
+                    <h2>Tip Amount</h2>
+                    <span>/ person</span>
+                </div>
+                <div class="tip-amount">
+                    <h1>$4.27</h1>
+                </div>
+            </div>
+            <div class="total">
+                <div class="div-one">
+                    <h2>Total</h2>
+                    <span>/ person</span>
+                </div>
+                <div class="total-amount">
+                    <h1>$32.79</h1>
+                </div>
+            </div>
+            <button id="button" type="submit">RESET</button>
+        </section>
+    </div>
     </div>
 </body>
+<script src="calc.js"></script>
 
 </html>
