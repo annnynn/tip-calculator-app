@@ -17,6 +17,13 @@ header {
     margin-top: 50px;
 }
 
+.top label{
+    font-size: 16px;
+    line-height: 23.7px;
+    font-weight: 700;
+    color: hsla(186, 14%, 43%, 1);
+}
+
 h2 {
     font-size: 16px;
     line-height: 23.7px;
@@ -48,6 +55,13 @@ input:focus {
     margin-top: 32px;
 }
 
+.bottom label{
+    font-size: 16px;
+    line-height: 23.7px;
+    font-weight: 700;
+    color: hsla(186, 14%, 43%, 1);
+}
+
 .top input {
     width: 100%;
     padding: 16px 16px 16px 16px;
@@ -66,12 +80,59 @@ input:focus {
     height: 48px;
 }
 
-.tips{
+.label-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error{
+    color: hsla(13, 70%, 61%, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+}
+
+.percentage{
+    cursor: pointer;
+}
+
+/*isnt working*/
+[name="tip"]:hover{
+  background-color:hsla(172, 67%, 45%, 1);
+  color: hsla(183, 100%, 15%, 1);
+}
+
+[name="tip"]:checked{
+background-color:hsla(173, 61%, 77%, 1);
+}
+
+[name="reset"]:checked{
+    background-color:hsla(173, 61%, 77%, 1);
+}
+
+[type="number"]:focus{
+  outline: none;
+}
+.checked{
+    background-color: hsla(173, 61%, 77%, 1);
+}
+.bill-put:invalid{
+    background-color: red;
+}
+
+.number-of:invalid{
+    background-color: red;
+}
+
+
+/*need to fix*/
+
+.percentages{
     display: flex;
     flex-wrap: wrap;
     width: 311px;
     column-gap: 16px;
-    cursor: pointer;
 }
 
 .number-of {
@@ -91,7 +152,15 @@ input:focus {
     width: 309px;
 }
 
-.tip-box {
+.middle label{
+    font-size: 16px;
+    line-height: 23.7px;
+    font-weight: 700;
+    color: hsla(186, 14%, 43%, 1);
+}
+
+
+.tip-bttn {
     padding: 6px 20px 6px 20px;
     font-size: 24px;
     line-height: 35.54px;
@@ -100,11 +169,22 @@ input:focus {
     margin-top: 16px;
     color: white;
     border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
+
+.tip-input{
+    padding: 6px 20px 6px 20px;
+    width: 146.63px;
+    margin-top: 16px;
+    line-height: 35.54px;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .box-3 {
-    background-color: hsla(172, 67%, 45%, 1);
-    color: hsla(183, 100%, 15%, 1);
+   background-color: hsla(183, 100%, 15%, 1);;
+    color: white;
 }
 
 .box-6 {
@@ -186,6 +266,7 @@ input:focus {
     border-radius: 5px;
     cursor: pointer;
     height: 48px;
+    font-weight: 700;
 }
 
 @media(min-width:1440px) {
@@ -223,7 +304,7 @@ input:focus {
         background-color: hsla(183, 78%, 24%, 1);
     }
 
-    .tip-box {
+    .tip-bttn {
         width: 117px;
         padding: 6px 14px 6px 14px;
         text-align: center;
@@ -233,7 +314,7 @@ input:focus {
     width: 379px;
     }
 
-    .tips{
+    .percentages{
         display: flex;
         flex-wrap: wrap;
         width: 379px;
